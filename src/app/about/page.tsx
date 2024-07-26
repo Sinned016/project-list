@@ -1,24 +1,22 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import Link from "next/link";
-import styles from "@/styles/Home.module.css";
+import React from "react";
+import type { Metadata } from "next";
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: "Ninja List | About",
+};
+
+export default function About() {
   return (
     <div>
-      <h1 className={styles.title}>Homepage</h1>
-      <p className={styles.text}>
+      <h1>About</h1>
+      <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo a iure voluptatem eveniet, molestiae minus
         dolore sunt nesciunt, corrupti inventore voluptates quae optio aut eius soluta iste quis eum.
       </p>
-      <p className={styles.text}>
+      <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem nemo a iure voluptatem eveniet, molestiae minus
         dolore sunt nesciunt, corrupti inventore voluptates quae optio aut eius soluta iste quis eum.
       </p>
-
-      <Link className={styles.btn} href="/ninjas">
-        See Ninja Listing
-      </Link>
     </div>
   );
 }
